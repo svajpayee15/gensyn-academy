@@ -966,12 +966,13 @@
 
                 ctx.textAlign = "center"; 
                 ctx.fillStyle = "#111";
-                ctx.font = "bold 24px Space Grotesk"; ctx.fillText("GENSYN ACADEMY", 400, 190);
+                ctx.font = "bold 40px Space Grotesk"; ctx.fillText("GENSYN ACADEMY", 400, 190);
+                ctx.font = "18px Cinzel"; ctx.fillText("By @Svajpayee15", 400, 190);
                 
-                ctx.fillStyle = "#230800"; ctx.font = "40px Cinzel"; ctx.fillText("Certificate of Competence", 400, 250);
+                ctx.fillStyle = "#230800"; ctx.font = "35px Cinzel"; ctx.fillText("Certificate of Competence", 400, 250);
                 
                 ctx.font = "italic 18px Cinzel"; ctx.fillStyle = "#444"; ctx.fillText("This certifies", 400, 300);
-                ctx.font = "bold 50px Cinzel"; ctx.fillStyle = "#000"; ctx.fillText(name, 400, 360);
+                ctx.font = "bold 30px Cinzel"; ctx.fillStyle = "#000"; ctx.fillText(name, 400, 360);
                 
                 ctx.beginPath(); ctx.moveTo(200, 380); ctx.lineTo(600, 380); ctx.strokeStyle = "#230800"; ctx.lineWidth = 1; ctx.stroke();
                 
@@ -979,7 +980,7 @@
                 if(currentTrack === 'solver') trackTitle = "Gensyn Advaned Course";
                 if(currentTrack === 'architect') trackTitle = "GensynChad Course";
                 ctx.font = "italic 18px Cinzel"; ctx.fillStyle = "#444"; ctx.fillText("has completed the", 400, 300);
-                ctx.font = "bold 24px Space Grotesk"; ctx.fillStyle = "#230800"; ctx.fillText(trackTitle, 400, 440);
+                ctx.font = "bold 19px Space Grotesk"; ctx.fillStyle = "#230800"; ctx.fillText(trackTitle, 400, 440);
                 
 
                 ctx.font = "12px JetBrains Mono"; ctx.fillStyle = "#555"; ctx.fillText(new Date().toLocaleDateString(), 400, 530);
@@ -1007,4 +1008,5 @@
     </script>
 </body>
 </html>
+
 
