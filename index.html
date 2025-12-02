@@ -963,10 +963,6 @@
                 ctx.fillRect(0, 0, 800, 600);
                 ctx.strokeStyle = "#230800"; ctx.lineWidth = 4; ctx.strokeRect(20, 20, 760, 560);
                 ctx.strokeStyle = "#fad7d1"; ctx.lineWidth = 2; ctx.strokeRect(30, 30, 740, 540);
-                
-                // Logo
-                const img = document.getElementById('gensyn-logo-src');
-                if(img) ctx.drawImage(img, 350, 60, 100, 100);
 
                 ctx.textAlign = "center"; 
                 ctx.fillStyle = "#111";
@@ -974,16 +970,18 @@
                 
                 ctx.fillStyle = "#230800"; ctx.font = "40px Cinzel"; ctx.fillText("Certificate of Competence", 400, 250);
                 
-                ctx.font = "italic 18px Cinzel"; ctx.fillStyle = "#444"; ctx.fillText("This certifies that", 400, 300);
+                ctx.font = "italic 18px Cinzel"; ctx.fillStyle = "#444"; ctx.fillText("This certifies", 400, 300);
                 ctx.font = "bold 50px Cinzel"; ctx.fillStyle = "#000"; ctx.fillText(name, 400, 360);
                 
                 ctx.beginPath(); ctx.moveTo(200, 380); ctx.lineTo(600, 380); ctx.strokeStyle = "#230800"; ctx.lineWidth = 1; ctx.stroke();
                 
-                let trackTitle = "Foundational Knowledge";
-                if(currentTrack === 'solver') trackTitle = "Node Operator & Solver";
-                if(currentTrack === 'architect') trackTitle = "Protocol Architect";
+                let trackTitle = "Foundational Knowledge Course";
+                if(currentTrack === 'solver') trackTitle = "Gensyn Advaned Course";
+                if(currentTrack === 'architect') trackTitle = "GensynChad Course";
+                ctx.font = "italic 18px Cinzel"; ctx.fillStyle = "#444"; ctx.fillText("has completed the", 400, 300);
                 ctx.font = "bold 24px Space Grotesk"; ctx.fillStyle = "#230800"; ctx.fillText(trackTitle, 400, 440);
                 
+
                 ctx.font = "12px JetBrains Mono"; ctx.fillStyle = "#555"; ctx.fillText(new Date().toLocaleDateString(), 400, 530);
 
                 btn.classList.remove('btn-loading'); btn.innerHTML = 'SUCCESS';
@@ -1009,3 +1007,4 @@
     </script>
 </body>
 </html>
+
